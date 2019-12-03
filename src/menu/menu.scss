@@ -1,0 +1,160 @@
+@import "../_variables";
+@import "../_mixins";
+
+.menu {
+
+  &__contents {
+    display: flex;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    padding-right: 33px;
+    padding-bottom: 5px;
+    margin-right: 0;
+
+    border: solid rgba(0, 0, 0, 0.1);
+    border-width: 0 0 0 0.5px;
+    transition: 0.2s;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    display: inline;
+    width: 40px;
+    height: 50px;
+    fill: $blue-text;
+    margin-left: 25px;
+  }
+
+  &__img._white {
+    fill: white;
+    width: 33px;
+    height: 33px;
+    margin-left: 15px;
+  }
+
+  &__img-chevron {
+    width: 13px;
+    height: 6px;
+    fill: white;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: 0.2s;
+  }
+
+  &__img-chevron._right-chevron {
+    display: none;
+    height: 10px;
+    float: right;
+    transform: rotate(0.75turn)!important;
+  }
+
+  &__text {
+    display: inline-block;
+    color: $blue-text;
+    line-height: 16px;
+    padding-left: 19px;
+  }
+
+  &__text._white {
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 15px;
+    padding-left: 12px;
+  }
+
+  &__item-dots {
+    display: none;
+    height: 65px;
+    min-width: 80px;
+
+    align-items: center;
+    justify-content: center ;
+    border: solid rgba(0, 0, 0, 0.1);
+    border-width: 0 1px 0 1px;
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-down-1437 {
+      display: flex;
+    }
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: $blue-background;
+    border-radius: 100%;
+    margin: 7px;
+  }
+}
+
+.active {
+
+  .menu__item {
+  background: $blue-background;
+  }
+
+  .menu__item-dots {
+    background: $blue-background;
+  }
+
+  .menu__img {
+    fill: white;
+  }
+
+  .menu__text {
+    color: white;
+  }
+
+  .menu__dot {
+    background: white;
+  }
+}
+
+.dropped {
+  top: 66px;
+}
+
+#top-menu-item5 {
+
+  .menu__item {
+  border-width: 0 0.5px 0 0.5px;
+  }
+
+  @include media-down-1437 {
+    display: none;
+  }
+}
+
+#top-menu-item4 {
+
+  @include media-down-md {
+    display: none;
+  }
+}
+
+#top-menu-item3 {
+
+  @include media-down-sm {
+    display: none;
+  }
+}
+
+#top-menu-item2 {
+
+  @include media-down-xs {
+    display: none;
+  }
+}

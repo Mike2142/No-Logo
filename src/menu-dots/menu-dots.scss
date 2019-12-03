@@ -1,0 +1,65 @@
+@import "../_variables";
+@import "../_mixins";
+
+.menu-dots {
+  display: inline-block;
+  float: right;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+
+
+  .menu__item {
+    display: none;
+    width: 215px;
+    background: #144F7F;
+    padding-right: 0;
+    border-width: 0.5px 0.5px 0 0.5px;
+    border-color: white;
+
+    .menu__img {
+      fill: white;
+    }
+
+    .menu__text {
+      color: white;
+    }
+  }
+}
+
+.main-block._position-vertical {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+  top: -350px;
+  margin: 0;
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+#dots-menu-item5 {
+
+  @include media-down-1437 {
+    display: flex;
+  }
+}
+
+#dots-menu-item4 {
+
+  @include media-down-md {
+    display: flex;
+  }
+}
+
+#dots-menu-item3 {
+
+  @include media-down-sm {
+    display: flex;
+  }
+}
+
+#dots-menu-item2 {
+
+  @include media-down-xs {
+    display: flex;
+  }
+}

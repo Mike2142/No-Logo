@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>No logo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="plug-ins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plug-ins/slick/slick-theme.css"/>
+    <link href="plug-ins/hamburgers/hamburgers.css" rel="stylesheet">
+    <link href="build/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="main-block row">
+        <div class="menu col col-lg-11 col-xl-9">
+            <ul class="menu__contents">
+
+                <li>
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-1')" onblur="dropTheMenu1(this,'#drop-menu-1')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+
+                        <span class="menu__text">Flat Rack <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li id="top-menu-item2">
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-2')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Опен топ <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li id="top-menu-item3">
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-3')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Танк- <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li id="top-menu-item4">
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-4')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Термо- <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li id="top-menu-item5">
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-5')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Универсальный <br> контейнер</span>
+                    </a>
+                </li>
+
+                <li>
+
+                    <a class="menu__item-dots" onclick="dropTheMenu1(this,'#drop-menu-6')">
+                        <div class="menu__dot"></div>
+                        <div class="menu__dot"></div>
+                        <div class="menu__dot"></div>
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="main-block row _background-blue" id="drop-menu-1">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu2__contents">
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#gas-tank"></use>
+                        </svg>
+                        <span class="menu__text _white">Перевозка <br> сжиженных <br> газов</span>
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <div class="menu3 _wide">
+
+                        <ul>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu1' )">Кислоты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu2' )">Щелочи</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu3' )">Спирты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu1' )">Растворители</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu2' )">Соли</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu3' )">Эфиры</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu1' )">Хлориды</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu2' )">Прочее</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu1">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu2">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu3">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item _right-border" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chem-flask"></use>
+                        </svg>
+                        <span class="menu__text _white">Перевозка <br>  химических <br> грузов</span>
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <div class="menu3 _wide">
+                        <ul>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide _active" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu4' )">Кислоты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu5' )">Щелочи</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu6' )">Спирты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu4' )">Растворители</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu5' )">Соли</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu6' )">Эфиры</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu4' )">Хлориды</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu5' )">Прочее</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu4">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu5">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu6">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="main-block row _background-blue" id="drop-menu-2">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu2__contents">
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#gas-tank"></use>
+                        </svg>
+                        <span class="menu__text _white">Перевозка <br> сжиженных <br> газов</span>
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <div class="menu3 _wide">
+                        <ul>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide _active" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu7' )">Кислоты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu8' )">Щелочи</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu9' )">Спирты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu7' )">Растворители</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu8' )">Соли</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu9' )">Эфиры</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu7' )">Хлориды</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu8' )">Прочее</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu7">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu8">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu9">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item _right-border" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chem-flask"></use>
+                        </svg>
+                        <span class="menu__text _white">Перевозка <br>  химических <br> грузов</span>
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <div class="menu3 _wide">
+                        <ul>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide _active" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu10' )">Кислоты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu11' )">Щелочи</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu12' )">Спирты</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item _wide" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu10' )">Растворители</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu11' )">Соли</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu12' )">Эфиры</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu10' )">Хлориды</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                            <li class="menu3__item-wrap">
+                                <a class="menu3__item" href="#" onclick="dropTheMenu3( this, '#menu3__drop-menu11' )">Прочее</a>
+                                <svg class="menu__img-chevron _right-chevron">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                                </svg>
+                            </li>
+
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu10">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu11">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                        <ul class="menu3__drop-menu" id="menu3__drop-menu12">
+                            <li><a class="menu3__item menu4__item" href="#">Фенол расплавленный</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Олеум</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Хлорная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Нитрилакриловая кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Серная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Азотная кислота</a></li>
+                            <li><a class="menu3__item menu4__item" href="#">Ортофосфорная кислота</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="main-block row _background-blue" id="drop-menu-3">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu2__contents">
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap ">
+
+                    <a class="menu__item menu2__item _right-border" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="main-block row _background-blue" id="drop-menu-4">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu2__contents">
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap ">
+
+                    <a class="menu__item menu2__item _right-border" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="main-block row _background-blue" id="drop-menu-5">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu2__contents">
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap">
+
+                    <a class="menu__item menu2__item" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="menu2__wrap ">
+
+                    <a class="menu__item menu2__item _right-border" onclick="dropTheMenu2(this)">
+                        <svg class="menu__img _white">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#lemonade"></use>
+                        </svg>
+
+                        <span class="menu__text _white">Перевозка <br>  пищевых <br> грузов</span>
+
+                        <svg class="menu__img-chevron">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#chevron"></use>
+                        </svg>
+                    </a>
+
+                    <div class="border-arrow"></div>
+
+                    <ul class="menu3">
+                        <li><a class="menu3__item" href="#">Спирты пищевые</a></li>
+                        <li><a class="menu3__item" href="#">Масла</a></li>
+                        <li><a class="menu3__item" href="#">Соки</a></li>
+                        <li><a class="menu3__item" href="#">Концентраты соков</a></li>
+                        <li><a class="menu3__item" href="#">Пишевые добавки</a></li>
+                        <li><a class="menu3__item" href="#">Патока</a></li>
+                        <li><a class="menu3__item" href="#">Виноматериал</a></li>
+                        <li><a class="menu3__item" href="#">Прочее</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="main-block row _background-blue _position-vertical" id="drop-menu-6">
+
+        <div class="menu col col-lg-11 col-xl-9">
+
+            <ul class="menu__contents menu-dots">
+
+                <li>
+                    <a class="menu__item" onclick="dropTheMenu1(this,'#drop-menu-1')" onblur="dropTheMenu1(this,'#drop-menu-1')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+
+                        <span class="menu__text">Flat Rack <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item" id="dots-menu-item2" onclick="dropTheMenu1(this,'#drop-menu-2')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Опен топ <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item"  id="dots-menu-item3" onclick="dropTheMenu1(this,'#drop-menu-3')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Танк- <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item" id="dots-menu-item4" onclick="dropTheMenu1(this,'#drop-menu-4')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Термо- <br> контейнеры</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item" id="dots-menu-item5" onclick="dropTheMenu1(this,'#drop-menu-5')">
+                        <svg class="menu__img">
+                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#auto-tank"></use>
+                        </svg>
+                        <span class="menu__text">Универсальный <br> контейнер</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="plug-ins/Input mask/dist/jquery.inputmask.bundle.js"></script>
+<script src="plug-ins/Input mask/dist/inputmask/bindings/inputmask.binding.js"></script>
+<script type="text/javascript" src="plug-ins/slick/slick.min.js"></script>
+<script type="text/javascript" src="build/all.js"></script>
+
+</html>

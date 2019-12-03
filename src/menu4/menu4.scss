@@ -1,0 +1,11 @@
+@import "../_variables";
+@import "../_mixins";
+
+.menu4__item {
+  color: $link-color;
+  padding-left: 19px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

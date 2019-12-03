@@ -1,0 +1,40 @@
+@import "../_variables";
+@import "../_mixins";
+
+.menu2__contents {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.menu2__item {
+  background: $blue-background;
+  width: 176px;
+  padding-right: 0;
+  border-color: white;
+}
+
+.active2 {
+
+  .menu2__item {
+  background: $light-blue-background;
+  }
+
+  .menu__img._white {
+    fill: $blue-text;
+  }
+
+  .menu__text._white {
+    color: $blue-text;
+  }
+
+  .menu__img-chevron {
+    fill: $blue-text;
+    transform: rotate(1.50turn);
+  }
+
+}
+
+.menu2__item._right-border {
+  border-width: 0 0.5px 0 0.5px;
+}
+

@@ -1,0 +1,25 @@
+@import "../_variables";
+@import "../_mixins";
+
+.main-block {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  justify-items: center;
+  background: white;
+
+  padding: 0 15px;
+
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+}
+
+.main-block._background-blue {
+  background: $blue-background;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: -200px;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
